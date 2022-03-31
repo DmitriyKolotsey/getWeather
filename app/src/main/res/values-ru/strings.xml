@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="city_info">Ваш город</string>
+    <string name="weather_feels_like">Ощущается как</string>
+    <string name="weather_humidity">Влажность</string>
+    <string name="weather_pressure">Давление</string>
+    <string name="weather_wind_speed">Скорость ветра</string>
+    <string name="weather_wind_gust">Порывы ветра</string>
+    <string name="main_activity_scroll_view_content_description">Погода на 5 дней</string>
+    <string name="weather_uv_level">УФ индекс</string>
+    <string name="weather_clouds">Облачность</string>
+    <string name="mmHg">мм. рт. ст.</string>
+    <string name="meter_per_sec">м/с</string>
+    <string name="weather_wind_direction">Направление ветра</string>
+    <string name="enter_city_name">Введите название вашего города</string>
+    <string name="ok_button">Ок</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="city_name_hint">Название города</string>
+    <string name="selected_city">Выбранный город:</string>
+    <string name="city_not_found">Город не найден. Введите название города правильно</string>
+    <string name="max_temp">Максимальная температура</string>
+    <string name="min_temp">Минимальная температура</string>
+    <string name="show_more_daily_weather">Показать больше</string>
+    <string name="hourly_weather">Почасовой прогноз погоды</string>
+    <string name="now">Сейчас</string>
+</resources>

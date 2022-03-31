@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name" translatable="false">getWeather</string>
+    <string name="city_info">Your city is</string>
+    <string name="weather_feels_like">Feels like</string>
+    <string name="weather_humidity">Humidity</string>
+    <string name="weather_pressure">Pressure</string>
+    <string name="weather_wind_speed">Wind speed</string>
+    <string name="weather_wind_gust">Wind gust</string>
+
+    <string name="main_activity_scroll_view_content_description">5 days weather</string>
+    <string name="weather_uv_level">UV level</string>
+    <string name="weather_clouds">Cloudiness</string>
+    <string name="celsius" translatable="false">°C</string>
+    <string name="mmHg">mmHg</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="meter_per_sec">m/s</string>
+    <string name="weather_wind_direction">Wind direction</string>
+    <string name="enter_city_name">Enter your city name</string>
+    <string name="ok_button">Ok</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="city_name_hint">City name</string>
+    <string name="selected_city">Selected city:</string>
+    <string name="city_not_found">City not found. Enter city name correctly</string>
+    <string name="max_temp">Max temp</string>
+    <string name="min_temp">Min temp</string>
+    <string name="show_more_daily_weather">Show more daily weather</string>
+    <string name="hourly_weather">Hourly weather forecast</string>
+    <string name="now">Now</string>
+</resources>

@@ -1,0 +1,270 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_weight="1"
+    android:background="@color/main_activity_main_layout"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:translationZ="12dp">
+
+    <TextView
+        android:id="@+id/textViewDailyFragmentDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:padding="1dp"
+        android:textSize="15sp"
+        android:theme="@style/MainActivityTextViewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="100"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDailyFragmentWeatherTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                android:theme="@style/MainActivityTextViewStyle" />
+
+            <TextView
+                android:id="@+id/textViewDailyFragmentWeatherTemperatureFeelsLikeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:padding="1dp"
+                android:text="@string/weather_feels_like"
+                android:textSize="15sp"
+                android:theme="@style/MainActivityTextViewStyle" />
+
+            <TextView
+                android:id="@+id/textViewDailyFragmentWeatherTemperatureFeelsLikeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:theme="@style/MainActivityTextViewStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageViewDailyFragmentWeatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/ic_cloudy_weather" />
+
+            <TextView
+                android:id="@+id/textViewDailyFragmentWeatherDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:theme="@style/MainActivityTextViewStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDailyFragmentWeatherCloudsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:text="@string/weather_clouds"
+                android:textSize="15sp"
+                android:theme="@style/MainActivityTextViewStyle" />
+
+            <TextView
+                android:id="@+id/textViewDailyFragmentWeatherCloudsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="2dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:theme="@style/MainActivityTextViewStyle" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/botDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWeatherPressureText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:text="@string/weather_pressure"
+                    android:textSize="15sp"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWeatherPressureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWeatherHumidityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:text="@string/weather_humidity"
+                    android:textSize="15sp"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWeatherHumidityValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWeatherWindSpeedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:text="@string/weather_wind_speed"
+                    android:textSize="15sp"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWeatherWindSpeedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWindGustText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:text="@string/weather_wind_gust"
+                    android:textSize="15sp"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/textViewDailyFragmentWindGustValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="2dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:theme="@style/MainActivityTextViewStyle" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
